@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Projeto de Sistemas e POO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #006400;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #006400;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #e6ffe6;
+            border-left: 4px solid #006400;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #006400;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background-color: #006400;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-voltar:hover {
+            background-color: #004d00;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #006400;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #004d00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Desafio - Projeto de Sistemas e POO</h1>
+        <p>Curso Técnico Integrado ao Ensino Médio - IFSP Campinas</p>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Descrição do Desafio</h2>
+            <p>
+                Após o sucesso no desenvolvimento do sistema básico de abertura de contas bancárias,
+                o banco decidiu expandir seus serviços para oferecer diferentes tipos de contas.
+                Agora, além das contas bancárias comuns, eles também oferecem contas poupança.
+            </p>
+            <p>
+                Sua tarefa é implementar a <strong>herança</strong> e o <strong>polimorfismo</strong> no sistema,
+                criando uma classe
+                <code>ContaPoupanca</code> que herde da classe <code>ContaBancaria</code> anteriormente criada.
+                A classe <code>ContaPoupanca</code> deve adicionar um novo atributo, <strong>taxa de juros</strong>,
+                além dos atributos herdados.
+            </p>
+        </div>
+
+        <div class="section highlight">
+            <strong>Dica:</strong> Utilize a herança para criar a classe <code>ContaPoupanca</code> que herde da classe
+            <code>ContaBancaria</code> e adicione o atributo <code>taxaJuros</code>. Implemente o método
+            <code>exibirInformacoes()</code> na classe <code>ContaPoupanca</code> para exibir as informações adicionais.
+        </div>
+
+        <div class="section">
+            <h2>Entrada</h2>
+            <p>
+                O programa deve solicitar ao usuário as informações necessárias para abrir uma conta poupança.
+                A entrada deve ser feita via console e deve incluir:
+            </p>
+            <ul>
+                <li>Número da conta (inteiro)</li>
+                <li>Nome do titular (texto)</li>
+                <li>Saldo inicial (decimal)</li>
+                <li>Taxa de juros (decimal)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Saída</h2>
+            <p>
+                Após receber as informações, o programa deve criar um objeto do tipo <code>ContaPoupanca</code> e
+                exibir:
+            </p>
+            <ul>
+                <li>Número da conta</li>
+                <li>Nome do titular</li>
+                <li>Saldo atual</li>
+                <li>Taxa de juros</li>
+            </ul>
+            <p>
+                A saída deve ser clara e legível para o usuário.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Exemplos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entrada</th>
+                        <th>Saída Esperada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Joao<br>123456<br>1000.0<br>1.5
+                        </td>
+                        <td>
+                            Conta Poupanca:<br>
+                            Joao<br>
+                            123456<br>
+                            Saldo: R$ 1000.0<br>
+                            Taxa de juros: 1.5%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ana<br>789012<br>2500.0<br>3.0
+                        </td>
+                        <td>
+                            Conta Poupanca:<br>
+                            Ana<br>
+                            789012<br>
+                            Saldo: R$ 2500.0<br>
+                            Taxa de juros: 3.0%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Maria<br>987654<br>500.0<br>2.5
+                        </td>
+                        <td>
+                            Conta Poupanca:<br>
+                            Maria<br>
+                            987654<br>
+                            Saldo: R$ 500.0<br>
+                            Taxa de juros: 2.5%
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <a href="../index.html" class="btn-voltar">Voltar</a>
+        </div>
+    </main>
+
+    <main>
+        <h2>Envio dos exercícios</h2>
+        <a href="https://forms.gle/rPh5rActHHxZi22D8" class="btn" target="_blank">Acessar</a>
+    </main>
+
+    <footer>
+        Disciplina: Projeto de Sistemas e POO - IFSP Campinas
+    </footer>
+
+    <script>
+        console.log("Este site apresenta o desafio para a turma. Nenhuma solução foi implementada.");
+    </script>
+
+</body>
+
+</html>

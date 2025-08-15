@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Funcionários da Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #006400;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #006400;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #e6ffe6;
+            border-left: 4px solid #006400;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background-color: #006400;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-voltar:hover {
+            background-color: #004d00;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #006400;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #004d00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Desafio - Funcionários da Empresa</h1>
+        <p>Curso Técnico de Informática Integrado ao Ensino Médio - IFSP Campinas</p>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Descrição do Desafio</h2>
+            <p>
+                Implemente um sistema chamado <strong>"Funcionários da Empresa"</strong> utilizando os conceitos de
+                <strong>herança</strong> e <strong>polimorfismo</strong>.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Estrutura das Classes</h2>
+            <ul>
+                <li><strong>Classe Base: <code>Funcionario</code></strong>
+                    <ul>
+                        <li>Atributos: <code>nome</code>, <code>salario</code>, <code>departamento</code></li>
+                        <li>Métodos: <code>mostrarDados()</code> e <code>baterPonto()</code></li>
+                    </ul>
+                </li>
+                <li><strong>Subclasses:</strong>
+                    <ul>
+                        <li><code>Gerente</code>: método <code>realizarReuniao()</code> e sobrescreve
+                            <code>mostrarDados()</code>
+                        </li>
+                        <li><code>Desenvolvedor</code>: método <code>programar()</code> e sobrescreve
+                            <code>mostrarDados()</code>
+                        </li>
+                        <li><code>Estagiario</code>: método <code>fazerTarefa()</code> e sobrescreve
+                            <code>mostrarDados()</code>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Classe Principal</h2>
+            <p>
+                Crie uma classe <code>Main</code> que instancie objetos de cada classe e chame seus métodos. Demonstre
+                que a herança funciona utilizando métodos da superclasse nas subclasses.
+            </p>
+        </div>
+
+        <div class="section highlight">
+            <strong>Desafio Extra (Opcional):</strong>
+            Crie a classe <code>Pessoa</code> com atributos como <code>cpf</code> e <code>dataNascimento</code>.
+            Faça com que <code>Funcionario</code> herde de <code>Pessoa</code> para aplicar herança múltipla por níveis.
+        </div>
+
+        <div class="section">
+            <h2>Interação com o Usuário</h2>
+            <p>
+                Utilizando a classe <code>Scanner</code>, implemente:
+            </p>
+            <ul>
+                <li>Cadastro de novos funcionários</li>
+                <li>Exibição dos dados cadastrados</li>
+                <li>Escolha do tipo de funcionário (Gerente, Desenvolvedor ou Estagiário)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <a href="../index.html" class="btn-voltar">Voltar</a>
+        </div>
+    </main>
+
+    <main>
+        <h2>Envio dos exercícios</h2>
+        <a href="https://forms.gle/rPh5rActHHxZi22D8" class="btn" target="_blank">Acessar</a>
+    </main>
+
+    <footer>
+        Disciplina: Projeto de Sistemas e POO - IFSP Campinas
+    </footer>
+
+    <script>
+        console.log("Este site apresenta o desafio para a turma. Nenhuma solução foi implementada.");
+    </script>
+
+</body>
+
+</html>

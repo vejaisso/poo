@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Classe Animal e Herança</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #006400;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #006400;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #e6ffe6;
+            border-left: 4px solid #006400;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background-color: #006400;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-voltar:hover {
+            background-color: #004d00;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #006400;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #004d00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Desafio - Classe Animal e Herança</h1>
+        <p>Curso Técnico Integrado ao Ensino Médio - IFSP Campinas</p>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Descrição do Desafio</h2>
+            <p>
+                Neste exercício, você deverá trabalhar com <strong>herança</strong> e <strong>polimorfismo</strong> para
+                criar diferentes tipos de animais que se comunicam de formas distintas.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Instruções</h2>
+            <ul>
+                <li>Crie uma classe <code>Animal</code> com um método abstrato <code>fala()</code>.</li>
+                <li>Crie as classes <code>Homem</code>, <code>Cão</code> e <code>Gato</code>, herdando de
+                    <code>Animal</code>.
+                </li>
+                <li>Redefina o método <code>fala()</code> em cada classe para retornar, respectivamente: <em>"Oi"</em>,
+                    <em>"Au au"</em> e <em>"Miau"</em>.
+                </li>
+                <li>Crie um vetor com 10 elementos do tipo <code>Animal</code>, instanciando objetos de
+                    <code>Homem</code>, <code>Cão</code> e <code>Gato</code>.
+                </li>
+                <li>Utilize um loop para percorrer o vetor e fazer cada animal falar.</li>
+            </ul>
+        </div>
+
+        <div class="section highlight">
+            <strong>Dica:</strong> Utilize herança para evitar repetição de código e explore o polimorfismo para chamar
+            o método <code>fala()</code> de forma genérica.
+        </div>
+
+        <div class="section">
+            <h2>Objetivo</h2>
+            <p>
+                O objetivo deste desafio é reforçar os conceitos de classes abstratas, herança e polimorfismo,
+                aplicando-os em um contexto simples e prático.
+            </p>
+        </div>
+
+        <div class="section">
+            <a href="../index.html" class="btn-voltar">Voltar</a>
+        </div>
+    </main>
+
+    <main>
+        <h2>Envio dos exercícios</h2>
+        <a href="https://forms.gle/rPh5rActHHxZi22D8" class="btn" target="_blank">Acessar</a>
+    </main>
+
+    <footer>
+        Disciplina: Projeto de Sistemas e POO - IFSP Campinas
+    </footer>
+
+    <script>
+        console.log("Este site apresenta o desafio para a turma. Nenhuma solução foi implementada.");
+    </script>
+
+</body>
+
+</html>
