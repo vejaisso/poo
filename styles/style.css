@@ -1,12 +1,13 @@
+/* Estilo base da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f6fa;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-
 }
 
+/* Cabeçalho */
 header {
     background-color: #006400;
     color: #fff;
@@ -14,6 +15,7 @@ header {
     padding: 20px 10px;
 }
 
+/* Conteúdo principal */
 main {
     max-width: 900px;
     margin: 20px auto;
@@ -24,30 +26,40 @@ main {
     text-align: center;
 }
 
+/* Títulos */
 h1,
 h2 {
     color: #006400;
 }
 
+/* Botões */
 .btn {
     display: inline-block;
     padding: 12px 20px;
     margin: 10px;
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: #fff;
     background-color: #006400;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    transition: 0.3s;
+    transition: background-color 0.3s ease;
 }
 
+/* Efeito hover no botão */
 .btn:hover {
     background-color: #004d00;
 }
 
+/* Estilo de foco para acessibilidade */
+.btn:focus {
+    outline: 2px dashed #004d00;
+    outline-offset: 3px;
+}
+
+/* Caixa de orientação */
 .orientacao {
     text-align: left;
     background: #f0f9f0;
@@ -57,6 +69,7 @@ h2 {
     margin-top: 20px;
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     padding: 15px;
